@@ -1,0 +1,50 @@
+This README file contains information on the contents of the
+meta-jsos layer.
+
+Please see the corresponding sections below for details.
+
+Dependencies
+============
+
+This layer depends on:
+
+  URI: git://git.openembedded.org/bitbake
+  branch: master
+
+  URI: git://git.openembedded.org/openembedded-core
+  layers: meta
+  branch: master
+
+
+Patches
+=======
+
+Please submit any patches as GitHub pull requests for the corresponding
+GitHub repo. For any questions, ask more from the official maintainers.
+
+Maintainer: Lauri Svan <lauri.svan@gmail.com>
+
+
+Table of Contents
+=================
+
+  I. Adding the meta-jsos layer to your build
+
+
+I. Adding meta-jsos layer to your build
+=================================================
+
+In order to use this layer, you need to make the build system aware of
+it.
+
+Assuming the meta-jsos layer exists at the top-level of your
+yocto build tree, you can add it to the build system by adding the
+location of the jsos-oe-core layer to bblayers.conf, along with any
+other layers needed. e.g.:
+
+  BBLAYERS ?= " \
+    /path/to/yocto/meta \
+    /path/to/yocto/meta-yocto \
+    /path/to/yocto/meta-yocto-bsp \
+    /path/to/yocto/meta-jsos \
+    "

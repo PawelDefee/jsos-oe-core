@@ -1,0 +1,11 @@
+#!/usr/bin/node
+console.log('JSOS starting...');
+
+var net = require("net"),
+    repl = require("repl");
+
+repl.start({
+  prompt: "jsos> ",
+  input: process.stdin,
+  output: process.stdout
+});
